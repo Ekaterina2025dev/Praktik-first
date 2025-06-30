@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif; /*основной шрифт интер, принадлежит к пространству sans-serif*/
+}
+
+.spaced{
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none; /*подчеркивание ссылок убираем*/
+}
+
+header{
+    max-width: 1500px; /*наш элемент отражается по центру*/
+    margin: 0 auto; /*наш элемент отражается по центру*/
+    padding: 60px 100px 40px; /*наш элемент отражается по центру независимо от экрана*/
+    display: flex; /*элементы на одной строчке*/
+    align-items: center; /*центровка*/
+    justify-content: space-between; /*элементы разводим по углам*/
+}
+
+.logo{
+    font-size: 32px;
+    text-transform: uppercase; /*все буквы заглавные*/
+    font-weight: 900; /*жирный шрифт*/
+    color: #506303;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 35px; /*отступы между элементами*/
+}
+
+nav a { /*настройка ссылок*/
+    color: black;
+    font-size: 20px;
+}
+
+/*настройка кнопки*/
+button{
+    background: #506303; /*фон кнопки*/
+    color: white; /*цвет шрифта*/
+    border: none; /*граница отсутствует*/
+    text-transform: uppercase; /*заглавные буквы*/
+    padding: 10px 80px; /*отступы сверху снизу - 10 px; слева справа - 80px*/
+    font-size: 20px; /*размер шрифта*/
+    cursor: pointer;/*смена указателя на руку*/
+}
+
+.lang{ /*настройка смены языка*/
+    display: flex; /*преобразование в контейнер*/
+    align-items: center; /*центрируем*/
+    gap: 3px; /*отступ между иконкой и буквами EN*/
+}
+/*настройка медиа-запросов для корректного отображения ссылок на разных экранах*/
+/*создаем в task4.html бургерное меню(кнопка) до ссылки с логотипом*/
+/*чтобы burger-btn во время, необходимо: */
+
+.burger-btn{
+   background: transparent; /*убираем задний фон на невидимый*/
+   padding: 0; /*никаких отступов*/
+   display: none; /*изначально меню убираем, чтобы в нужный момент отобразилось*/
+   
+}
+
+.hero{
+    height: 1444px; /*высота блока*/
+    background: url(../images/foto4/hero.jpg) ; /*задний фон- изображение. Сначала выходим из папки css .. , */
+    background-size: cover;/*чтобы изображение не дублировалось, его необходимо настроить под экран*/
+    display: flex;
+    align-items: end; /*элементы выбора переместились вниз*/
+    padding-bottom: 140px;
+    justify-content: center; /*по центру*/
+}
+
+.hero-choose{
+    padding: 24px 20px; /*настройка отступов в самих divах*/
+    width: 235px;
+    height: 100px;
+    color: white; /*цвет текста*/
+    display: flex;
+    flex-direction: column; /*во всю ширину*/
+    justify-content: center; /*по центру*/
+}
+
+.hero-choose:nth-child(1){
+    background: #506303; /*задний фон каждого элемента выбора*/
+}
+
+.hero-choose:nth-child(2){
+    background: #425203; 
+}
+
+.hero-choose:nth-child(3) {
+    background: #2d3802; 
+}
+
+.hero-choose h4 {
+    line-height: 160%; /*высота линии- отступ меджу заголовком и выбором*/
+}
+
+.hero-choose select {
+    background: transparent; /*задний фон в выборах убирается*/
+    border: none; /*граница убирается*/
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero button { /*настройка кнопки*/
+    height: 100px; /*высота кнопки*/
+    padding: 20px; /*внутренние отступы*/
+}
+
+.reservation {
+    margin: 100px auto;
+}
+
+.about-us {
+    margin: 100px auto; /*при изменении экрана отступы слева и спара - авто */
+    max-width: 1080px; /*максимально возможная ширина*/
+    padding: 0px 30px;/*отступы от границ слева справа -30*/
+    line-height: 150%;
+    text-align: center;
+}
+
+h2{
+    font-size: 56px;
+    color: black;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+}
+
+.about-us p { /*отступ между абзацами*/
+    margin: 30px 0px;
+}
+
+.our-events, .reservation {
+    text-align: center; /*кнопка после событий центрируется*/
+    padding: 30px;
+}
+
+.cards {
+    display: grid; /*т.к. сетка из трех элементов, предпочтительнее grid*/
+    grid-template-columns: repeat(3,1fr); /*элементы в строку друг за другом*/
+    max-width: 1300px;
+    margin: 25px auto;
+    gap: 20px;/*отступ между элементами*/
+}
+
+.card {      /*относительно карточки блок с датой переносился туда куда надо*/
+    position: relative;
+}
+
+.card-date {    /*переносим дату события вверх блока влево*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white; /*делаем белым фон*/
+    width: 70px; /*ширина блока с датой*/
+    height: 70px; /*высота блока с датой*/
+    display: flex; /*переводим в контейнер чтобы число встало по центру*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px; /*размер месяца в дате*/
+}
+
+.card-date-day{  /*изменяем размер числа в дате*/
+    font-size: 30px;
+}
+
+.card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;/*изображение подстраивается под разные экраны*/
+}
+
+.card-body{ /*настройка заголовка и текста*/
+    padding: 40px;
+    text-align: center;
+    display: flex;/*настраиваем отступ между заголовком и абзацем*/
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.card-body h4{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contact-us {
+    max-width: 940px;
+    margin: 100px auto; /*отступ секций друг от друга*/
+    padding: 30px; /*внутренний отступ чтобы было расстояние от границ*/
+}
+
+.contact-form {
+   display: flex; 
+   flex-direction: column;
+   gap: 60px;
+}
+
+.contact-form-fields { /*настраиваем форму с полями*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*делим на два столбца*/
+    gap: 60px; /*отступ между элементами*/
+    margin-top: 30px; /*верхний отступ от заголовка Контакты*/
+}
+
+.contact-form-fields input{
+    border: none; /*Без границ*/
+    border-bottom: 1px solid black; /*только нижняя граница*/
+    padding: 10px 0px; /*отступ при вводе текста сверху и снизу 10*/
+    outline: none; /*чтобы выделения ячеек не было, задаем этот параметр*/
+}
+
+.contact-form textarea {
+    resize: none; /*блок при вводе сообщения не увеличивается и не уменьшается*/
+    height: 100px; /*высота блока для ввода сообщения*/
+    border: 1px solid black;
+    outline: none; /*нет выделения блока сообщения если нажать на него*/
+}
+
+.contact-form button {
+    width: 235px;
+    display: block; /*перевод в блок перед центрированием*/
+    margin: 0 auto ; /*отцентрировали*/
+}
+
+
+footer{
+    background: #506303;
+    padding: 60px;
+}
+
+.footer-body {
+    max-width: 1160px;
+    margin: 0 auto;
+    color: white;
+}
+
+.footer-body h3 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-body-links{
+    display: flex; /*разнесли списки на три столбика*/
+    justify-content: space-between;
+    padding: 65px 0px 30px;
+}
+
+.footer-body-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-body-links a{
+    font-weight: 100;
+    color: white;
+}
+
+.footer-body-links h4{
+    margin-bottom: 15px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-social-media{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0px;
+}
+
+.footer-policy {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 2px solid white;
+    padding: 15px 0px 32px;
+}
+
+.footer-policy a {
+    color: white;
+    font-weight: 100;
+}
+
+.rights {
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+
+/*медиа-запрос позволяет настраивать свойства элеменнтов для различных экранов*/
+/*записываются в конце*/
+/*бургерное меню будет появляться когда экран будет меньше 992px - контрольная точка*/
+@media screen and (max-width:1024px) { /*при уменьшении экрана заголовок уменьшится*/
+    header{ /*корректируем меню и логотип с языком для корректроного отображения при уменьшении экрана 1024*/
+        padding: 5px 10px;
+    }
+
+    .logo{
+        font-size: 30px;
+    }
+
+    header button{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .burger-btn{
+        display: block; /*бургерное меню появляется при уменьшении экрана*/
+    }
+
+    nav {      /*тег nav должен убраться*/
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1,1fr); /*при уменьшении экрана на одной строчке остается один элемент в событиях*/
+    }
+
+    .card img {  /*с уменьшением экрана размер изображений будет уменьшаться*/
+        height: 60vw; /**/
+    }
+}
+
+@media screen and (max-width:768px) { /*когда экран уменьшается, блок с выбором необходимо изменить*/
+    .hero{
+        flex-direction: column;
+        align-items: center; /*центрируем элементы*/
+        justify-content: end;
+    }
+
+    .hero button, .hero-choose{
+        width: max(70%, 300px); /*элементы выбора на всех экранах будут отображаться красиво*/
+    }
+
+    .contact-form-fields {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .contact-form {
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .footer-body-links, .footer-policy, .footer-social-media, .rights {
+        display: none;
+     }
+     .footer-body h3 {
+        font-size: 32px;
+     }
+}
+
+
+@media screen and (max-width:450px) { /*при уменьшении экрана заголовок уменьшится*/
+    header{ /*корректируем бургерное меню и логотип с языком для корректроного отображения при уменьшении экрана 450*/
+        padding: 30px;
+        text-align: center;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }    
+
+    .about-us p{ /*на маленьком экране уменьшается размер текта*/
+        font-size: 14px;
+        margin: 14px 0px; /*отступы между ними*/
+        color: #303030;        
+    }
+
+    .card-date{
+        width: 70px;
+        height: 70px;
+        font-size: 16px;
+    }
+
+    .card-date-day {
+        font-size: 20px;
+    }
+}
