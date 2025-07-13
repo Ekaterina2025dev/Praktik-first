@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название сайта</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo"><img src="images/logo/logo2.png" alt=""></a>
+                <span>Школа вязания, творчества и декора</span>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Наша школа</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Программы</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Любить Вязать</h1>
+                <p class="hero__subtitle">Обучение вязанию от ваших идей до первых проектов</p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Программы</a>
+                    <a href="#contacts" class="btn btn--outline">Контакты</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="images/header4.jpg" alt="">
+                    </div>
+                    <div class="about__content">
+                        <h2 class="section-title">О нас</h2>
+                        <p class="about__text">Школа вязания, творчества и декора — это уютное пространство для творческого самовыражения и развития новых навыков.</p>
+                        <p class="about__text">Здесь учатся создавать уникальные вещи своими руками — от теплых свитеров до декоративных элементов интерьера.</p>
+                        <ul class="about__features">
+                            <li class="feature-item">
+                                <span></span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Курсы проводят опытные мастера, которые делятся секретами мастерства и вдохновляют на творческие эксперименты.</span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Это место, где каждый может раскрыть свою креативность и найти единомышленников.</span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Приходите с любой идеей — вместе сделаем её яркой и уникальной!</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Программы</h2>
+                <div class="menu__content active" id="coffee">
+                    <div class="menu__grid">
+                        <div class="menu-item">
+                            <div class="menu-item__images">
+                                <img src="images/korzina.jpg" alt="">
+                            </div>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Корзины</h3>
+                                <span class="menu-item__price">от 1500 руб.</span>
+                            </div>
+                            <p class="menu-item__description">Можно связать любые корзины— детские, для хранения игрушек, для продуктов или даже декоративные.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__images">
+                                <img src="images/chehol_kartholder.jpg" alt="">
+                            </div>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Чехлы</h3>
+                                <span class="menu-item__price">от 1000 руб.</span>
+                            </div>
+                            <p class="menu-item__description">Чехлы декоративные, интерьерные, для моб.устройств, бутылок и прочее.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__images">
+                                <img src="images/o_kofta.jpg" alt="">
+                            </div>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Одежда</h3>
+                                <span class="menu-item__price">от 2500 руб</span>
+                            </div>
+                            <p class="menu-item__description">Свитер, платье, кардиган, жилетку или даже что-то с декоративными элементами</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__images">
+                                <img src="images/sumka_babushka.jpg" alt="">
+                            </div>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Сумки</h3>
+                                <span class="menu-item__price">от 1500 руб</span>
+                            </div>
+                            <p class="menu-item__description">Сумка-шоппер, клатч, сумка-мешок, рюкзак - огромное разнообразие схем.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__images">
+                                <img src="images/z_baran.jpg" alt="">
+                            </div>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Игрушки и декор для дома</h3>
+                                <span class="menu-item__price">от 2000 руб.</span>
+                            </div>
+                            <p class="menu-item__description">Возможность украсить дом или создать милые подарки</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__images">
+                                <img src="images/makrame_shezlong_zont.jpg" alt="">
+                            </div>
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Макраме</h3>
+                                <span class="menu-item__price">от 3000 руб.</span>
+                            </div>
+                            <p class="menu-item__description">Подвесные панно и гобелены, занавески и ширмы, шезлонги и зонтики, любые варианты декора.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="photo-slider" class="photo-slider">
+            <div class="container">
+                <div class="slider">
+                    <button class="slider-btn prev" aria-label="Предыдущий слайд">&#10094;</button>
+                    <div class="slider-wrapper">
+                        <div class="slider-items">
+                            <img src="images/tapki.jpg" alt="Фото 20" class="slider-photo">
+                            <img src="images/korzini_babushka.jpg" alt="Фото 10" class="slider-photo">
+                            <img src="images/z_gus.jpg" alt="Фото 19" class="slider-photo">
+                            <img src="images/chehol_butil.jpg" alt="Фото 2" class="slider-photo">
+                            <img src="images/d_brelok.jpg" alt="Фото 4" class="slider-photo">
+                            <img src="images/d_futlyar.jpg" alt="Фото 5" class="slider-photo">
+                            <img src="images/header3.jpg" alt="Фото 6" class="slider-photo">
+                            <img src="images/sumka_chehol.jpg" alt="Фото 20" class="slider-photo">
+                            <img src="images/korzina_oreh.jpg" alt="Фото 9" class="slider-photo">
+                            <img src="images/sumka2.jpg" alt="Фото 19" class="slider-photo">
+                            <img src="images/korzini_dgut.jpg" alt="Фото 11" class="slider-photo">
+                            <img src="images/z_chehol_ovca.jpg" alt="Фото 18" class="slider-photo">
+                            <img src="images/korzini_nabor.jpg" alt="Фото 12" class="slider-photo">
+                            <img src="images/kover.jpg" alt="Фото 13" class="slider-photo">
+                            <img src="images/lulka.jpg" alt="Фото 14" class="slider-photo">
+                            <img src="images/makrame_decor.jpg" alt="Фото 15" class="slider-photo">
+                            <img src="images/makrame_shezlong.jpg" alt="Фото 16" class="slider-photo">
+                            <img src="images/z_baran.jpg" alt="Фото 17" class="slider-photo">
+                            <img src="images/makrame_shtori.jpg" alt="Фото 18" class="slider-photo">
+                            <img src="images/o_top.jpg" alt="Фото 20" class="slider-photo">
+                            <img src="images/pled.jpg" alt="Фото 17" class="slider-photo">
+                            <img src="images/sumka.jpg" alt="Фото 18" class="slider-photo">
+                            <img src="images/chehol.jpg" alt="Фото 1" class="slider-photo">
+                        </div>
+                    </div>
+                    <button class="slider-btn next" aria-label="Следующий слайд">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Я уже давно хотела научиться вязать, с детства, но у меня не было такой возможности, потому что дома никто не вязал. Точнее, вязали соседи или тёти, я их просила, чтобы они меня научили вязать, но им постоянно было некогда. Это такое дело — хочется, чтобы человек пришёл, занялся тобой, рассказал тебе все тонкости, для этого нужно время. Всё равно остается много вопросов, а на курсе тебе рассказывают и помогают.</p>
+                        <div class="review__author">
+                            <img src="images/otzovik/Elena.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Елена</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Сначала я думала, что это очень сложно — взяла не полный курс, а 4 первых изделия, чтобы просто попробовать, смогу ли я вязать. Оказалось, что я могу, и это не так сложно, как я думала. Главное — это желание. Атмосфера мне очень понравилась, это место отдыха. Преподаватель Ирина всё объясняла, показывала, рассказывала, терпела нас, даже если мы что-то не понимали.</p>
+                        <div class="review__author">
+                            <img src="images/otzovik/Oksana.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Оксана</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Лучшее место, где можно научиться вязанию или вышивке. Уютная атмосфера пространства располагает к творчеству. Мастер-классы и он-лайн курсы на любой уровень мастерства. Преподаватели - талантище!</p>
+                        <div class="review__author">
+                            <img src="images/otzovik/Yuliya.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Юлия</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>Ленинградская область, г. Выборг, ул. Приморская, д.3а</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>8-881378-39775</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>lubitvyazat@yandex.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>c 09-00 до 21-00</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://vk.com/id1554041" class="social-link" aria-label="Вконтакте" target="_blank"><i class="fab fa-vk"></i></a>
+                            <a href="https://t.me/KATERINPOP" class="social-link" aria-label="Telegram" target="_blank"><i
+                                    class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1952.8792633903379!2d28.761717176539474!3d60.694529601005634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46973224c5930a4b%3A0xdcfe10caa4cf51de!2z0YPQuy4g0J_RgNC40LzQvtGA0YHQutCw0Y8sIDPQsCwg0JLRi9Cx0L7RgNCzLCDQm9C10L3QuNC90LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCAxODg4MDA!5e0!3m2!1sru!2sru!4v1752416238285!5m2!1sru!2sru"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo"><img src="images/logo/logo2.png" width="100px" alt=""></a>
+                    <p class="footer__text">Школа вязания, творчества и декора</p>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Наша школа</a></li>
+                        <li><a href="#menu" class="footer__link">Программы</a></li>
+                        <li><a href="#about" class="footer__link">О нас</a></li>
+                        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__title">Подписка</h3>
+                    <p class="footer__text">Подпишитесь на наши новости и акции</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
